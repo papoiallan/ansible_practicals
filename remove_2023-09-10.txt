@@ -1,0 +1,23 @@
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [server2]
+ok: [server1]
+
+TASK [update repository index] *************************************************
+changed: [server2]
+changed: [server1]
+
+TASK [remove apache2 package] **************************************************
+ok: [server2]
+ok: [server1]
+
+TASK [remove dependencies] *****************************************************
+ok: [server2]
+ok: [server1]
+
+PLAY RECAP *********************************************************************
+server1                    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+server2                    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
